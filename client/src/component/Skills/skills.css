@@ -1,0 +1,112 @@
+.skills-section{
+
+    margin: 0;
+    padding: 35px 10px;
+    width: 90%;
+    margin: auto;
+
+}
+.parent-skills >h1
+,.parent-skills >span{
+    padding: 1px 5px ;
+    font-size: var(--h1-font-size);
+    min-height: fit-content;
+    color: var( --title-color);
+    margin: auto;
+    text-align: center;
+}
+.parent-skills span{
+    font-size: 12px;  
+    color: var( --text-color); 
+    display: block;
+    margin: auto;
+}
+.skills-container{
+    width: 40%;
+    padding: 1rem 2px;
+    background-color: var(--container-color);
+    border: 1px solid var( --text-color);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: var(  --mb-2) ;
+}
+.skills-container h3{
+padding: var(--mb-1) var(  --mb-0-25) ;
+font-size: var(  --h3-font-size);
+min-height: fit-content;
+color: var(  --title-color-dark);
+margin: auto;
+text-align: center;
+}
+.skills-child{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1rem;
+    margin:  var(--mb-0-25) var(--mb-1);
+}
+/*
+.skills-left{
+    padding-left: 2rem;
+    color: var(--title-color);
+}*/
+.skill-top,.skill-Middle,.skill-buttom{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    margin: var(--mb-2) var(--mb-0-25);
+    color: var(--title-color);
+    font-size: var(  --h3-font-size);
+}
+
+
+
+ .title h4
+.title span{
+    padding: 10px 5px ;
+    font-size: var(--h1-font-size);
+    min-height: fit-content;
+    color: var( --title-color);
+    margin: auto;
+    text-align: center;
+    
+}
+.title span{
+    font-size: 12px;  
+    color: var( --text-color); 
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+
+/*========================== Media Query ==============================*/
+
+/* ==================For large devices=============== */
+@media (min-width:768px)and (max-width:992px)  {
+
+
+
+
+}    
+/* ====================For medium devices ==================================*/
+@media  (min-width:576px)and (max-width:768px)  {
+body {
+margin: 0 0 var(--header-height) 0;
+}
+.skills-container {
+    width: 60%;
+}
+
+
+}
+/*==================================For small devices============================ */
+@media  (max-width: 576px) {
+    .skills-container {
+        width: 70%;
+    }
+
+}
+
+
+
+
+

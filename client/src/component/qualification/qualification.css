@@ -1,0 +1,162 @@
+.Qualitification{
+    margin: 0;
+    padding: 35px 10px;
+    width: 90%;
+    margin: auto;
+
+}
+.Qualitification .qual,
+.Qualitification .S-child {
+    padding: 1px 5px;
+    font-size: var(--h1-font-size);
+    min-height: fit-content;
+    color: var(--title-color);
+    margin: auto;
+    text-align: center;
+}
+.Qualitification .S-child {
+    font-size: 12px;
+    color: var(--text-color);
+    display: block;
+    margin: auto;
+}
+.Qualitification-container{
+    max-width: 768px;
+    margin: auto;
+}
+.Qualitification-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    margin-top: var(  --mb-1-5);
+    margin-bottom: var(  --mb-1-5);
+}
+.Qualitification-button{
+    font-size: var( --h2-font-size);
+    font-weight: var( --font-medium);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.Qualitification-button:hover{
+    color: var(  --title-color-dark);
+}
+.Qualitification-icons{
+    font-size:1.5rem;
+    margin-right: var(--mb-0-25);
+}
+.Qualitification-active{
+    color: var(  --title-color-dark); 
+}
+
+.Qualitification-section{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+.Qualitification-content{
+    display: none;
+}
+.Qualitification-content-active{
+    display: block;
+}
+.Qualitification-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+.Qualitification-title{
+font-size: var(--normal-font-size);
+font-weight: var(--font-medium);
+}
+.Qualitification-subtitle{
+display: inline-block;
+font-size: var( --small-font-size);
+margin-bottom: var(--mb-1);
+}
+.Qualitification-calender{
+    font-size: var( --small-font-size); 
+}
+
+.Qualitification-rounder{
+   display: inline-block;
+   width:13px;
+   height: 13px;
+   background-color: var(  --text-color);
+   border-radius: 50%; 
+}
+.Qualitification-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(6px,-7px);
+}
+
+/*=============== Media Query ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+   
+.Qualitification-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .Qualitification-container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    
+
+  }
+  
+  @media screen and (max-width: 576px) {
+.Qualitification-section{
+    grid-template-columns: initial;
+}
+.Qualitification-button{
+    margin: 0 var(  --mb-0-75);
+}
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+  .Qualitification-data{
+    gap: 0.5rem;
+  }
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

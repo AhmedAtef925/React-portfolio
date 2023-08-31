@@ -1,0 +1,32 @@
+.scroll{
+    position: fixed;
+    right: 2rem;
+    bottom:-20%;
+    opacity: 0.8;
+   /* background-color: var(--title-color);*/
+    border-radius: 0.4rem;
+    padding: 10px;
+    z-index: 10000;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.scroll .icons{
+    font-size: 2rem;
+    color: var( --text-color);
+    transition: all 1s ease-in-out;
+}
+.scroll .icons:hover{
+    /*background-color: var(  --title-color-dark);*/
+    color: var(--title-color-dark);
+}
+.scroll-show{
+    bottom: 2rem;
+}
+
+
+
+
+
+
+
+

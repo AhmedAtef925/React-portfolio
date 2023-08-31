@@ -1,0 +1,161 @@
+/* <PortfolioItem item={ele} key={index}/>*/
+.work{
+    margin: 0;
+    padding: 35px 10px;
+    width: 90%;
+    margin: auto;
+
+}
+.work .work-header,
+.work .S-child {
+    padding: 1px 5px;
+    font-size: var(--h1-font-size);
+    min-height: fit-content;
+    color: var(--title-color);
+    margin: auto;
+    text-align: center;
+}
+.work .S-child {
+    font-size: 12px;
+    color: var(--text-color);
+    display: block;
+    margin: auto;
+}
+/*Data-item*/
+.portfolio-filter{
+    max-width: 25%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.7rem;
+    padding: 1rem;
+}
+.Data-item{
+cursor: pointer;
+color: var(--title-color);
+font-size: var( --normal-font-size);
+font-weight: var(  --font-medium);
+padding: 0.25rem 0.75rem;
+margin: 0;
+border-radius: 10px;
+text-transform: capitalize;
+transition: all 1s ease-in-out;
+}
+.Data-item:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+.active-item{
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+/*portfolio-container*/
+.portfolio-container{
+    display: grid;
+grid-template-columns: repeat(3,auto);
+gap: 3rem;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+}
+.Portfolio-content{
+    background-color: var( --container-color);
+    border: 1px solid  var( --text-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.portfol-image{
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 1s ease-in-out;
+}
+.portfol-image:hover{
+    opacity: 1;
+}
+.portfol-title{
+    font-size: var( --normal-font-size);
+    font-weight: var(  --font-medium);
+    margin-bottom: 0.5rem;
+}
+.portfol-link{
+    font-size: var( --small-font-size);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.portfol-icon {
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.portfol-link:hover .portfol-icon{
+    transform: translateX(0.5rem);
+}
+
+
+/*========================== Media Query ==============================*/
+
+/* ==================For large devices=============== */
+@media (min-width:768px)and (max-width:992px)  {
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
+}    
+/* ====================For medium devices ==================================*/
+@media  (min-width:576px)and (max-width:768px)  {
+body {
+margin: 0 0 var(--header-height) 0;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.portfol-image {
+    max-width: 250px;
+}
+
+
+}
+/*==================================For small devices============================ */
+@media  (max-width: 576px) {
+
+
+    .portfolio-container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

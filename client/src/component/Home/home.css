@@ -1,0 +1,315 @@
+:root{
+  --linkin:#0A66c2;
+  --youtube:#e52d27;
+  --twitter:#1d9bf0;
+  --facebook:#3b5998;
+  --whatup:	#25D366;
+}
+.home-container {
+  background-color: #2b3d5b;
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  padding: 20px 10px;
+  color: white;
+  position: relative;
+}
+.home-container .home-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10rem;
+  margin-bottom: 5rem;
+}
+.home-child{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.home-parent .home-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.home-parent .home-link {
+width: 48px;
+height: 48px;
+line-height: 24px;
+margin: 5px 10px;
+border-radius: 50%;
+outline: 2px solid var(--container-color);
+cursor: pointer;
+transition: all ease-in-out 0.3s;
+display: grid;
+place-items: center;
+}
+.home-parent .home-link:hover{
+  outline-offset:3px ;
+  transition: all 0.3s;
+}
+.home-parent .home-link a {
+  color: var(--container-color);
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.home-parent .home-link:hover a{
+  transform: scale(1.15);
+}
+.home-parent .home-link:hover:first-child {
+  background-color: var(--facebook);
+}
+
+.home-parent .home-link:hover:nth-child(2) {
+  background: var(--linkin);
+}
+.home-parent .home-link:hover:nth-child(3) {
+  background: radial-gradient(
+    circle at 30% 107% #fdf497 0% ,
+    #fdf497 5%, #fd5949 45%,
+    #d6249f 60%,  #285aeb 90%
+  );
+}
+
+.home-parent .home-link:hover:nth-child(4) {
+  background-color: var(--twitter);
+}
+.home-parent .home-link:hover:nth-child(5) {
+ background-color: var(--whatup);
+}
+.home-child .home-details-name {
+  font-size: 25px;
+  margin: 6px 1px 25px;
+  font-family: monospace;
+
+}
+.home-child .home-details-name span {
+  color: orange;
+}
+.home-details-role h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family:cursive;
+}
+.home-role-tagline
+{
+  font-size: 20px;
+  font-family: monospace;
+}
+.home-btn {
+  margin: 30px 5px;
+  padding: 5px;
+}
+.home-btn a {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+}
+.home-btn button:last-child a {
+  background-color: orangered;
+  border: none;
+}
+.home-btn button:first-child a:hover {
+  background-color: orangered;
+  border: none;
+}
+.home-btn button:last-child a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.home-parent-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 380px;
+  box-shadow: 0 1px 0 0 white;
+  border-radius: 50%;
+}
+.home-parent-img .home-img {
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+  background-image: url("picture.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+.home-parent-img .home-img:hover {
+  transform: scale(1.1);
+}
+.shape-bg{
+  max-width: 100%;
+  
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+/*======water aniamted======*/
+
+.water-aniamate h1{
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #d2dce636;
+	background-image: url(water.png);
+	background-clip:text;
+	animation: water 15s infinite;
+}
+@keyframes water {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+}
+
+
+/*=============== Media Query ===============*/
+                            /* ==================For large devices=============== */
+@media (min-width:768px)and (max-width:992px)  {
+  
+  /*======water aniamted======*/
+
+.water-aniamate h1{
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #d2dce636;
+	background-image: url(water.png);
+	background-clip:text;
+	animation: water 15s infinite;
+}
+@keyframes water {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+} 
+.home-container .home-parent {
+
+  gap: 1rem; 
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  }
+  .home-child{
+    margin-top: 1rem;
+  }
+  .home-links{
+    margin-top: 0.2rem;
+  }
+
+  
+}
+
+                            /* ====================For medium devices ==================================*/
+@media  (min-width:576px)and (max-width:768px)  {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+  /*======water aniamted======*/
+
+  .water-aniamate h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #d2dce636;
+    background-image: url(water.png);
+    background-clip:text;
+    animation: water 15s infinite;
+  }
+  @keyframes water {
+    from{
+      background-position: left 0 top 0;
+    } 
+    to{
+      background-position: left 1000px top 0;
+    }
+  } 
+
+ 
+  .home-container .home-parent {
+
+    gap: 1rem; 
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    }
+    .home-child{
+      margin-top: 1rem;
+    }
+    .home-links{
+      margin-top: 0.2rem;
+      gap:10px;
+    }
+    .home-parent .home-link {
+      width: 40px;
+      height: 40px;
+      line-height: 20px;
+      margin: 2px 5px;
+      border-radius: 50%;
+      outline: 2px solid var(--container-color);
+      cursor: pointer;
+      transition: all ease-in-out 0.3s;
+      display: grid;
+      place-items: center;
+    }
+
+}
+                         /* ==================================For small devices============================ */
+@media  (max-width: 576px) {
+  .home-parent-img{
+    display: none;
+    }
+
+ /*======water aniamted======*/
+
+ .water-aniamate h1{
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #d2dce636;
+	background-image: url(water.png);
+	background-clip:text;
+	animation: water 15s infinite;
+}
+@keyframes water {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+}
+ 
+
+.home-container .home-parent {
+
+gap: 1rem; 
+margin-bottom: 3rem;
+margin-top: 2rem;
+}
+.home-child{
+  margin-top: 1rem;
+  place-content:inherit;
+  align-items: center;
+  justify-content: center;
+}
+.home-links{
+  margin-top: 1.7rem;
+}
+
+}
+
+
+

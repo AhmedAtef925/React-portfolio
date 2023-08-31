@@ -1,0 +1,184 @@
+.Services-section {
+
+    margin: 0;
+    padding: 35px 10px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.Services-section .Services,
+.Services-section .S-child {
+    padding: 1px 5px;
+    font-size: var(--h1-font-size);
+    min-height: fit-content;
+    color: var(--title-color);
+    margin: auto;
+    text-align: center;
+}
+
+.Services-section .S-child {
+    font-size: 12px;
+    color: var(--text-color);
+    display: block;
+    margin: auto;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    width: 80%;
+    padding: 1rem 2px;
+    margin: auto;
+    margin-top: var(--mb-2);
+}
+
+.service-container .container-child {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--container-color);
+    height: 300px;
+    padding: var(--mb-3) var(--mb-2);
+
+}
+
+.service-container .container-child .service-icon {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    padding: 3px 1px;
+    margin: 10px 5px;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.service-container .container-child h3 {
+    font-weight: var(--font-normal);
+    margin: 30px 5px 30px;
+    text-align: center;
+
+}
+
+.service-container .container-child .service-btn {
+
+    color: var(--text-color);
+    background-color: transparent;
+    margin: 10px 5px 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out ;
+}
+.service-container .service-btn:hover{
+    color: var(  --title-color-dark);
+}
+
+.service-container .service-btn .icon{  
+      transition: all 1s ease-in-out ;
+}
+.service-container .service-btn:hover .icon{
+    transform: translateX(0.5rem);
+    color: var(  --title-color-dark);
+}
+
+/*"services-popul"*/
+
+.services-popul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: all 1s ease-in-out;
+    z-index: 100000;
+    display: none;
+
+}
+.popul-active{
+    display:block;
+}
+/*
+.services-popul .popul-father{
+    position: relative;
+}*/
+.services-popul .popul {
+    background-color: var(--container-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+
+}
+
+.popul-child {
+    padding: 4rem 2rem 1rem 1.5rem;
+}
+
+.popul-header {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+}
+
+.popul-header h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.popul-close {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    color: var(--title-color-dark);
+    cursor: pointer;
+    padding: 5px  10px ;
+}
+.popul-close:hover{
+    color: var(--container-color);
+    background-color: red;
+    
+}
+
+/*========================== Media Query ==============================*/
+
+/* ==================For large devices=============== */
+@media (min-width:768px)and (max-width:992px)  {
+
+
+
+
+}    
+/* ====================For medium devices ==================================*/
+@media  (min-width:576px)and (max-width:768px)  {
+body {
+margin: 0 0 var(--header-height) 0;
+}
+.service-container {
+
+    gap: 0.8rem;
+    width: 90%;
+}
+
+
+}
+/*==================================For small devices============================ */
+@media  (max-width: 576px) {
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .container-child{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 0.6rem;
+        height: 280px;  
+    }
+
+}
